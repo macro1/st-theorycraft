@@ -7,17 +7,24 @@ import requests
 CellValue = Union[None, float, str]
 
 DOCUMENT_URL = "https://rebrand.ly/heroquest"
+EQ_QUEST_DOCUMENT_ID = "1nQCu8NDWFLANauYLL_sbBXKrsSjFnmD5BfRyzp_EqWU"
 SHEET_SKILL_DATA = "Skill Data"
 SHEET_HERO_STATS = "Hero Stats"
+SHEET_EQ_DATA = "Eq_Data"
 
 
 def query_sheet(
-    sheet_name: str, tq: str = "SELECT *", as_dicts: bool = True
+    sheet_name: str,
+    tq: str = "SELECT *",
+    as_dicts: bool = True,
+    document_id: Optional[str] = None,
 ) -> Union[Iterator[Dict[str, CellValue]], Iterator[Tuple[CellValue, ...]]]:
-    redirect_resp = requests.get(DOCUMENT_URL, allow_redirects=False)
-    if redirect_resp.next is None or redirect_resp.next.url is None:
-        raise Exception("Unable to resolve document identifier.")
-    document_id = redirect_resp.next.url.rsplit("/", maxsplit=2)[-2]
+    if document_id is None:
+        redirect_resp = requests.get(DOCUMENT_URL, allow_redirects=False)
+        if redirect_resp.next is None or redirect_resp.next.url is None:
+            raise Exception("Unable to resolve document identifier.")
+        document_id = redirect_resp.next.url.rsplit("/", maxsplit=2)[-2]
+
     headers: Dict[str, str] = {"X-DataSource-Auth": ""}
     data_resp = requests.get(
         f"https://docs.google.com/spreadsheets/d/{document_id}/gviz/tq",
@@ -38,6 +45,10 @@ def query_sheet(
                     values,
                 )
             )
+            try:
+                del r_dict[""]
+            except KeyError:
+                pass
             yield r_dict
         else:
             r_tuple: Tuple[CellValue, ...] = tuple(values)
@@ -65,3 +76,7 @@ def capture_classes():
 
 def capture_skills():
     return list(query_sheet(SHEET_SKILL_DATA))
+
+
+def capture_items():
+    return list(query_sheet(SHEET_EQ_DATA, document_id=EQ_QUEST_DOCUMENT_ID))

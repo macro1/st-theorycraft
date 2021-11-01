@@ -18,6 +18,7 @@ def download():
 
     download_data.download_skills(output_path / "skills.json")
     download_data.download_classes(output_path / "classes.json")
+    download_data.download_items(output_path / "items.json")
 
 
 main.add_command(download)
