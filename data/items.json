@@ -759,6 +759,17 @@
     "Type": "Dagger"
   },
   {
+    "ATK": 560.0,
+    "Crit Chance": 0.0,
+    "DEF": 0.0,
+    "EVA": 0.0,
+    "HP": 18.0,
+    "Name": "Kyoshi Warrior Fan - T11",
+    "Primary Stat": "Attack",
+    "Tier": 11.0,
+    "Type": "Dagger"
+  },
+  {
     "ATK": 14.0,
     "Crit Chance": null,
     "DEF": 0.0,
@@ -1007,6 +1018,17 @@
     "EVA": 0.0,
     "HP": 0.0,
     "Name": "Gaia Maul - T11",
+    "Primary Stat": "Attack",
+    "Tier": 11.0,
+    "Type": "Mace"
+  },
+  {
+    "ATK": 560.0,
+    "Crit Chance": 0.0,
+    "DEF": 0.0,
+    "EVA": 0.0,
+    "HP": 18.0,
+    "Name": "Sokka's Club - T11",
     "Primary Stat": "Attack",
     "Tier": 11.0,
     "Type": "Mace"
@@ -2332,6 +2354,17 @@
     "Type": "Heavy Armor"
   },
   {
+    "ATK": 40.0,
+    "Crit Chance": 0.0,
+    "DEF": 160.0,
+    "EVA": 0.0,
+    "HP": 0.0,
+    "Name": "Kyoshi Warrior Armor - T7",
+    "Primary Stat": "Defense",
+    "Tier": 7.0,
+    "Type": "Heavy Armor"
+  },
+  {
     "ATK": 0.0,
     "Crit Chance": 0.0,
     "DEF": 180.0,
@@ -2437,6 +2470,17 @@
     "EVA": 0.0,
     "HP": 0.0,
     "Name": "Canid Plate - T11",
+    "Primary Stat": "Defense",
+    "Tier": 11.0,
+    "Type": "Heavy Armor"
+  },
+  {
+    "ATK": 0.0,
+    "Crit Chance": 0.0,
+    "DEF": 305.0,
+    "EVA": 0.0,
+    "HP": 19.0,
+    "Name": "Fire Nation Armor - T11",
     "Primary Stat": "Defense",
     "Tier": 11.0,
     "Type": "Heavy Armor"
@@ -2580,6 +2624,17 @@
     "EVA": 0.0,
     "HP": 0.0,
     "Name": "Windrunner Armor - T8",
+    "Primary Stat": "Defense",
+    "Tier": 8.0,
+    "Type": "Light Armor"
+  },
+  {
+    "ATK": 0.0,
+    "Crit Chance": 0.0,
+    "DEF": 175.0,
+    "EVA": 0.0,
+    "HP": 11.0,
+    "Name": "Sokka's Outfit - T8",
     "Primary Stat": "Defense",
     "Tier": 8.0,
     "Type": "Light Armor"
@@ -2796,6 +2851,17 @@
   {
     "ATK": 0.0,
     "Crit Chance": 0.0,
+    "DEF": 135.0,
+    "EVA": 0.0,
+    "HP": 8.0,
+    "Name": "Aang's Robe - T7",
+    "Primary Stat": "Defense",
+    "Tier": 7.0,
+    "Type": "Clothes"
+  },
+  {
+    "ATK": 0.0,
+    "Crit Chance": 0.0,
     "DEF": 165.0,
     "EVA": 0.0,
     "HP": 0.0,
@@ -2987,6 +3053,17 @@
     "EVA": 0.0,
     "HP": 8.0,
     "Name": "Kodiak Helmet - T6",
+    "Primary Stat": "Defense",
+    "Tier": 6.0,
+    "Type": "Helmet"
+  },
+  {
+    "ATK": 35.0,
+    "Crit Chance": 0.0,
+    "DEF": 140.0,
+    "EVA": 0.0,
+    "HP": 0.0,
+    "Name": "Fire Nation Helmet - T6",
     "Primary Stat": "Defense",
     "Tier": 6.0,
     "Type": "Helmet"
@@ -5968,6 +6045,17 @@
     "EVA": 0.0,
     "HP": 0.0,
     "Name": "Forlorn Acorn - T11",
+    "Primary Stat": "Defense",
+    "Tier": 11.0,
+    "Type": "Amulet"
+  },
+  {
+    "ATK": 0.0,
+    "Crit Chance": 0.0,
+    "DEF": 340.0,
+    "EVA": 0.0,
+    "HP": 21.0,
+    "Name": "Gyatso's Amulet - T11",
     "Primary Stat": "Defense",
     "Tier": 11.0,
     "Type": "Amulet"

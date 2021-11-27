@@ -42,6 +42,7 @@
       "39": 336,
       "40": 350
     },
+    "Class Type": "Red",
     "DEF": {
       "1": 15,
       "2": 19,
@@ -126,7 +127,27 @@
       "39": 289,
       "40": 300
     },
-    "Name": "Soldier"
+    "Name": "Soldier",
+    "Slot 1": [
+      "Sword",
+      "Mace",
+      "Dagger"
+    ],
+    "Slot 2": [
+      "Heavy Armor"
+    ],
+    "Slot 3": [
+      "Gauntlets"
+    ],
+    "Slot 4": [
+      "Heavy Footwear"
+    ],
+    "Slot 5": [
+      "Potion"
+    ],
+    "Slot 6": [
+      "Shield"
+    ]
   },
   {
     "ATK": {
@@ -171,6 +192,7 @@
       "39": 769,
       "40": 800
     },
+    "Class Type": "Red",
     "DEF": {
       "1": 45,
       "2": 52,
@@ -255,7 +277,28 @@
       "39": 530,
       "40": 550
     },
-    "Name": "Mercenary"
+    "Name": "Mercenary",
+    "Slot 1": [
+      "Sword",
+      "Mace",
+      "Dagger",
+      "Spear"
+    ],
+    "Slot 2": [
+      "Heavy Armor"
+    ],
+    "Slot 3": [
+      "Gauntlets"
+    ],
+    "Slot 4": [
+      "Heavy Footwear"
+    ],
+    "Slot 5": [
+      "Potion"
+    ],
+    "Slot 6": [
+      "Shield"
+    ]
   },
   {
     "ATK": {
@@ -300,6 +343,7 @@
       "39": 384,
       "40": 400
     },
+    "Class Type": "Red",
     "DEF": {
       "1": 10,
       "2": 13,
@@ -384,7 +428,28 @@
       "39": 337,
       "40": 350
     },
-    "Name": "Barbarian"
+    "Name": "Barbarian",
+    "Slot 1": [
+      "Sword",
+      "Axe",
+      "Spear",
+      "Mace"
+    ],
+    "Slot 2": [
+      "Helmet"
+    ],
+    "Slot 3": [
+      "Gauntlets"
+    ],
+    "Slot 4": [
+      "Heavy Footwear"
+    ],
+    "Slot 5": [
+      "Potion"
+    ],
+    "Slot 6": [
+      "Herbal Medicine"
+    ]
   },
   {
     "ATK": {
@@ -429,6 +494,7 @@
       "39": 673,
       "40": 700
     },
+    "Class Type": "Red",
     "DEF": {
       "1": 30,
       "2": 36,
@@ -513,7 +579,29 @@
       "39": 598,
       "40": 620
     },
-    "Name": "Chieftain"
+    "Name": "Chieftain",
+    "Slot 1": [
+      "Sword",
+      "Axe",
+      "Spear",
+      "Mace"
+    ],
+    "Slot 2": [
+      "Helmet"
+    ],
+    "Slot 3": [
+      "Gauntlets"
+    ],
+    "Slot 4": [
+      "Heavy Footwear"
+    ],
+    "Slot 5": [
+      "Potion"
+    ],
+    "Slot 6": [
+      "Herbal Medicine",
+      "Shield"
+    ]
   },
   {
     "ATK": {
@@ -558,6 +646,7 @@
       "39": 336,
       "40": 350
     },
+    "Class Type": "Red",
     "DEF": {
       "1": 25,
       "2": 30,
@@ -642,7 +731,26 @@
       "39": 405,
       "40": 420
     },
-    "Name": "Knight"
+    "Name": "Knight",
+    "Slot 1": [
+      "Spear",
+      "Axe"
+    ],
+    "Slot 2": [
+      "Heavy Armor"
+    ],
+    "Slot 3": [
+      "Gauntlets"
+    ],
+    "Slot 4": [
+      "Helmet"
+    ],
+    "Slot 5": [
+      "Heavy Footwear"
+    ],
+    "Slot 6": [
+      "Shield"
+    ]
   },
   {
     "ATK": {
@@ -687,6 +795,7 @@
       "39": 577,
       "40": 600
     },
+    "Class Type": "Red",
     "DEF": {
       "1": 75,
       "2": 82,
@@ -771,7 +880,28 @@
       "39": 560,
       "40": 580
     },
-    "Name": "Lord"
+    "Name": "Lord",
+    "Slot 1": [
+      "Spear",
+      "Axe",
+      "Sword",
+      "Mace"
+    ],
+    "Slot 2": [
+      "Heavy Armor"
+    ],
+    "Slot 3": [
+      "Gauntlets"
+    ],
+    "Slot 4": [
+      "Helmet"
+    ],
+    "Slot 5": [
+      "Heavy Footwear"
+    ],
+    "Slot 6": [
+      "Shield"
+    ]
   },
   {
     "ATK": {
@@ -816,6 +946,7 @@
       "39": 433,
       "40": 450
     },
+    "Class Type": "Red",
     "DEF": {
       "1": 20,
       "2": 24,
@@ -900,7 +1031,27 @@
       "39": 318,
       "40": 330
     },
-    "Name": "Ranger"
+    "Name": "Ranger",
+    "Slot 1": [
+      "Bow",
+      "Crossbow",
+      "Gun"
+    ],
+    "Slot 2": [
+      "Heavy Armor"
+    ],
+    "Slot 3": [
+      "Gauntlets"
+    ],
+    "Slot 4": [
+      "Helmet"
+    ],
+    "Slot 5": [
+      "Potion"
+    ],
+    "Slot 6": [
+      "Ring"
+    ]
   },
   {
     "ATK": {
@@ -945,6 +1096,7 @@
       "39": 674,
       "40": 700
     },
+    "Class Type": "Red",
     "DEF": {
       "1": 60,
       "2": 65,
@@ -1029,7 +1181,27 @@
       "39": 483,
       "40": 500
     },
-    "Name": "Warden"
+    "Name": "Warden",
+    "Slot 1": [
+      "Bow",
+      "Crossbow",
+      "Gun"
+    ],
+    "Slot 2": [
+      "Heavy Armor"
+    ],
+    "Slot 3": [
+      "Gauntlets"
+    ],
+    "Slot 4": [
+      "Helmet"
+    ],
+    "Slot 5": [
+      "Potion"
+    ],
+    "Slot 6": [
+      "Ring"
+    ]
   },
   {
     "ATK": {
@@ -1074,6 +1246,7 @@
       "39": 481,
       "40": 500
     },
+    "Class Type": "Red",
     "DEF": {
       "1": 25,
       "2": 30,
@@ -1158,7 +1331,27 @@
       "39": 386,
       "40": 400
     },
-    "Name": "Samurai"
+    "Name": "Samurai",
+    "Slot 1": [
+      "Sword",
+      "Bow",
+      "Spear"
+    ],
+    "Slot 2": [
+      "Heavy Armor"
+    ],
+    "Slot 3": [
+      "Gauntlets"
+    ],
+    "Slot 4": [
+      "Helmet"
+    ],
+    "Slot 5": [
+      "Heavy Footwear"
+    ],
+    "Slot 6": [
+      "Potion"
+    ]
   },
   {
     "ATK": {
@@ -1203,6 +1396,7 @@
       "39": 674,
       "40": 700
     },
+    "Class Type": "Red",
     "DEF": {
       "1": 75,
       "2": 80,
@@ -1287,7 +1481,27 @@
       "39": 531,
       "40": 550
     },
-    "Name": "Daimyo"
+    "Name": "Daimyo",
+    "Slot 1": [
+      "Sword",
+      "Bow",
+      "Spear"
+    ],
+    "Slot 2": [
+      "Heavy Armor"
+    ],
+    "Slot 3": [
+      "Gauntlets"
+    ],
+    "Slot 4": [
+      "Helmet"
+    ],
+    "Slot 5": [
+      "Heavy Footwear"
+    ],
+    "Slot 6": [
+      "Potion"
+    ]
   },
   {
     "ATK": {
@@ -1332,6 +1546,7 @@
       "39": 577,
       "40": 600
     },
+    "Class Type": "Red",
     "DEF": {
       "1": 30,
       "2": 36,
@@ -1416,7 +1631,28 @@
       "39": 482,
       "40": 500
     },
-    "Name": "Berserker"
+    "Name": "Berserker",
+    "Slot 1": [
+      "Mace",
+      "Axe",
+      "Gun"
+    ],
+    "Slot 2": [
+      "Heavy Armor"
+    ],
+    "Slot 3": [
+      "Gauntlets"
+    ],
+    "Slot 4": [
+      "Heavy Footwear"
+    ],
+    "Slot 5": [
+      "Shield"
+    ],
+    "Slot 6": [
+      "Herbal Medicine",
+      "Potion"
+    ]
   },
   {
     "ATK": {
@@ -1545,7 +1781,29 @@
       "39": 580,
       "40": 600
     },
-    "Name": "Jarl"
+    "Name": "Jarl",
+    "Slot 1": [
+      "Mace",
+      "Axe",
+      "Gun"
+    ],
+    "Slot 2": [
+      "Heavy Armor"
+    ],
+    "Slot 3": [
+      "Gauntlets",
+      "Helmet"
+    ],
+    "Slot 4": [
+      "Heavy Footwear"
+    ],
+    "Slot 5": [
+      "Shield"
+    ],
+    "Slot 6": [
+      "Herbal Medicine",
+      "Potion"
+    ]
   },
   {
     "ATK": {
@@ -1590,6 +1848,7 @@
       "39": 288,
       "40": 300
     },
+    "Class Type": "Green",
     "DEF": {
       "1": 10,
       "2": 13,
@@ -1674,7 +1933,27 @@
       "39": 212,
       "40": 220
     },
-    "Name": "Thief"
+    "Name": "Thief",
+    "Slot 1": [
+      "Dagger",
+      "Bow",
+      "Crossbow"
+    ],
+    "Slot 2": [
+      "Light Armor"
+    ],
+    "Slot 3": [
+      "Rogue Hat"
+    ],
+    "Slot 4": [
+      "Gloves"
+    ],
+    "Slot 5": [
+      "Amulet"
+    ],
+    "Slot 6": [
+      "Ring"
+    ]
   },
   {
     "ATK": {
@@ -1719,6 +1998,7 @@
       "39": 673,
       "40": 700
     },
+    "Class Type": "Green",
     "DEF": {
       "1": 30,
       "2": 34,
@@ -1803,7 +2083,28 @@
       "39": 338,
       "40": 350
     },
-    "Name": "Trickster"
+    "Name": "Trickster",
+    "Slot 1": [
+      "Dagger",
+      "Bow",
+      "Crossbow"
+    ],
+    "Slot 2": [
+      "Light Armor"
+    ],
+    "Slot 3": [
+      "Rogue Hat"
+    ],
+    "Slot 4": [
+      "Gloves",
+      "Light Footwear"
+    ],
+    "Slot 5": [
+      "Amulet"
+    ],
+    "Slot 6": [
+      "Ring"
+    ]
   },
   {
     "ATK": {
@@ -1848,6 +2149,7 @@
       "39": 336,
       "40": 350
     },
+    "Class Type": "Green",
     "DEF": {
       "1": 10,
       "2": 13,
@@ -1932,7 +2234,25 @@
       "39": 222,
       "40": 230
     },
-    "Name": "Monk"
+    "Name": "Monk",
+    "Slot 1": [
+      "Clothes"
+    ],
+    "Slot 2": [
+      "Amulet"
+    ],
+    "Slot 3": [
+      "Amulet"
+    ],
+    "Slot 4": [
+      "Amulet"
+    ],
+    "Slot 5": [
+      "Ring"
+    ],
+    "Slot 6": [
+      "Ring"
+    ]
   },
   {
     "ATK": {
@@ -1977,6 +2297,7 @@
       "39": 625,
       "40": 650
     },
+    "Class Type": "Green",
     "DEF": {
       "1": 30,
       "2": 34,
@@ -2061,7 +2382,25 @@
       "39": 309,
       "40": 320
     },
-    "Name": "Grandmaster"
+    "Name": "Grandmaster",
+    "Slot 1": [
+      "Clothes"
+    ],
+    "Slot 2": [
+      "Amulet"
+    ],
+    "Slot 3": [
+      "Amulet"
+    ],
+    "Slot 4": [
+      "Amulet"
+    ],
+    "Slot 5": [
+      "Ring"
+    ],
+    "Slot 6": [
+      "Ring"
+    ]
   },
   {
     "ATK": {
@@ -2106,6 +2445,7 @@
       "39": 385,
       "40": 400
     },
+    "Class Type": "Green",
     "DEF": {
       "1": 12,
       "2": 15,
@@ -2190,7 +2530,27 @@
       "39": 222,
       "40": 230
     },
-    "Name": "Musketeer"
+    "Name": "Musketeer",
+    "Slot 1": [
+      "Crossbow",
+      "Sword",
+      "Gun"
+    ],
+    "Slot 2": [
+      "Light Armor"
+    ],
+    "Slot 3": [
+      "Gloves"
+    ],
+    "Slot 4": [
+      "Heavy Footwear"
+    ],
+    "Slot 5": [
+      "Potion"
+    ],
+    "Slot 6": [
+      "Amulet"
+    ]
   },
   {
     "ATK": {
@@ -2235,6 +2595,7 @@
       "39": 673,
       "40": 700
     },
+    "Class Type": "Green",
     "DEF": {
       "1": 35,
       "2": 40,
@@ -2319,7 +2680,28 @@
       "39": 362,
       "40": 375
     },
-    "Name": "Conquistador"
+    "Name": "Conquistador",
+    "Slot 1": [
+      "Crossbow",
+      "Sword",
+      "Gun"
+    ],
+    "Slot 2": [
+      "Light Armor"
+    ],
+    "Slot 3": [
+      "Gloves"
+    ],
+    "Slot 4": [
+      "Heavy Footwear",
+      "Light Footwear"
+    ],
+    "Slot 5": [
+      "Potion"
+    ],
+    "Slot 6": [
+      "Amulet"
+    ]
   },
   {
     "ATK": {
@@ -2364,6 +2746,7 @@
       "39": 433,
       "40": 450
     },
+    "Class Type": "Green",
     "DEF": {
       "1": 12,
       "2": 15,
@@ -2448,7 +2831,27 @@
       "39": 231,
       "40": 240
     },
-    "Name": "Wanderer"
+    "Name": "Wanderer",
+    "Slot 1": [
+      "Dagger",
+      "Axe",
+      "Gun"
+    ],
+    "Slot 2": [
+      "Light Armor"
+    ],
+    "Slot 3": [
+      "Rogue Hat"
+    ],
+    "Slot 4": [
+      "Light Footwear"
+    ],
+    "Slot 5": [
+      "Herbal Medicine"
+    ],
+    "Slot 6": [
+      "Amulet"
+    ]
   },
   {
     "ATK": {
@@ -2493,6 +2896,7 @@
       "39": 625,
       "40": 650
     },
+    "Class Type": "Green",
     "DEF": {
       "1": 35,
       "2": 40,
@@ -2577,7 +2981,27 @@
       "39": 338,
       "40": 350
     },
-    "Name": "Pathfinder"
+    "Name": "Pathfinder",
+    "Slot 1": [
+      "Dagger",
+      "Axe",
+      "Gun"
+    ],
+    "Slot 2": [
+      "Light Armor"
+    ],
+    "Slot 3": [
+      "Rogue Hat"
+    ],
+    "Slot 4": [
+      "Light Footwear"
+    ],
+    "Slot 5": [
+      "Herbal Medicine"
+    ],
+    "Slot 6": [
+      "Amulet"
+    ]
   },
   {
     "ATK": {
@@ -2622,6 +3046,7 @@
       "39": 481,
       "40": 500
     },
+    "Class Type": "Green",
     "DEF": {
       "1": 15,
       "2": 19,
@@ -2706,7 +3131,27 @@
       "39": 241,
       "40": 250
     },
-    "Name": "Ninja"
+    "Name": "Ninja",
+    "Slot 1": [
+      "Dagger",
+      "Sword",
+      "Bow"
+    ],
+    "Slot 2": [
+      "Light Armor"
+    ],
+    "Slot 3": [
+      "Rogue Hat"
+    ],
+    "Slot 4": [
+      "Gloves"
+    ],
+    "Slot 5": [
+      "Light Footwear"
+    ],
+    "Slot 6": [
+      "Ring"
+    ]
   },
   {
     "ATK": {
@@ -2751,6 +3196,7 @@
       "39": 674,
       "40": 700
     },
+    "Class Type": "Green",
     "DEF": {
       "1": 45,
       "2": 49,
@@ -2835,7 +3281,27 @@
       "39": 271,
       "40": 280
     },
-    "Name": "Sensei"
+    "Name": "Sensei",
+    "Slot 1": [
+      "Dagger",
+      "Sword",
+      "Bow"
+    ],
+    "Slot 2": [
+      "Light Armor"
+    ],
+    "Slot 3": [
+      "Rogue Hat"
+    ],
+    "Slot 4": [
+      "Gloves"
+    ],
+    "Slot 5": [
+      "Light Footwear"
+    ],
+    "Slot 6": [
+      "Ring"
+    ]
   },
   {
     "ATK": {
@@ -2880,6 +3346,7 @@
       "39": 529,
       "40": 550
     },
+    "Class Type": "Green",
     "DEF": {
       "1": 20,
       "2": 24,
@@ -2964,7 +3431,29 @@
       "39": 289,
       "40": 300
     },
-    "Name": "Dancer"
+    "Name": "Dancer",
+    "Slot 1": [
+      "Dagger",
+      "Bow",
+      "Crossbow",
+      "Wand"
+    ],
+    "Slot 2": [
+      "Light Armor"
+    ],
+    "Slot 3": [
+      "Rogue Hat"
+    ],
+    "Slot 4": [
+      "Gloves"
+    ],
+    "Slot 5": [
+      "Light Footwear"
+    ],
+    "Slot 6": [
+      "Ring",
+      "Amulet"
+    ]
   },
   {
     "ATK": {
@@ -3093,7 +3582,29 @@
       "39": 339,
       "40": 350
     },
-    "Name": "Acrobat"
+    "Name": "Acrobat",
+    "Slot 1": [
+      "Dagger",
+      "Bow",
+      "Crossbow",
+      "Wand"
+    ],
+    "Slot 2": [
+      "Light Armor"
+    ],
+    "Slot 3": [
+      "Rogue Hat"
+    ],
+    "Slot 4": [
+      "Gloves"
+    ],
+    "Slot 5": [
+      "Light Footwear"
+    ],
+    "Slot 6": [
+      "Ring",
+      "Amulet"
+    ]
   },
   {
     "ATK": {
@@ -3138,6 +3649,7 @@
       "39": 481,
       "40": 500
     },
+    "Class Type": "Blue",
     "DEF": {
       "1": 10,
       "2": 13,
@@ -3222,7 +3734,27 @@
       "39": 193,
       "40": 200
     },
-    "Name": "Mage"
+    "Name": "Mage",
+    "Slot 1": [
+      "Staff",
+      "Crossbow",
+      "Wand"
+    ],
+    "Slot 2": [
+      "Clothes"
+    ],
+    "Slot 3": [
+      "Magician Hat"
+    ],
+    "Slot 4": [
+      "Light Footwear"
+    ],
+    "Slot 5": [
+      "Spell"
+    ],
+    "Slot 6": [
+      "Ring"
+    ]
   },
   {
     "ATK": {
@@ -3267,6 +3799,7 @@
       "39": 962,
       "40": 1000
     },
+    "Class Type": "Blue",
     "DEF": {
       "1": 30,
       "2": 34,
@@ -3351,7 +3884,27 @@
       "39": 290,
       "40": 300
     },
-    "Name": "Archmage"
+    "Name": "Archmage",
+    "Slot 1": [
+      "Staff",
+      "Crossbow",
+      "Wand"
+    ],
+    "Slot 2": [
+      "Clothes"
+    ],
+    "Slot 3": [
+      "Magician Hat"
+    ],
+    "Slot 4": [
+      "Light Footwear"
+    ],
+    "Slot 5": [
+      "Spell"
+    ],
+    "Slot 6": [
+      "Ring"
+    ]
   },
   {
     "ATK": {
@@ -3396,6 +3949,7 @@
       "39": 577,
       "40": 600
     },
+    "Class Type": "Blue",
     "DEF": {
       "1": 10,
       "2": 13,
@@ -3480,7 +4034,27 @@
       "39": 202,
       "40": 210
     },
-    "Name": "Cleric"
+    "Name": "Cleric",
+    "Slot 1": [
+      "Mace",
+      "Spear",
+      "Wand"
+    ],
+    "Slot 2": [
+      "Clothes"
+    ],
+    "Slot 3": [
+      "Magician Hat"
+    ],
+    "Slot 4": [
+      "Light Footwear"
+    ],
+    "Slot 5": [
+      "Spell"
+    ],
+    "Slot 6": [
+      "Shield"
+    ]
   },
   {
     "ATK": {
@@ -3525,6 +4099,7 @@
       "39": 867,
       "40": 900
     },
+    "Class Type": "Blue",
     "DEF": {
       "1": 30,
       "2": 36,
@@ -3609,7 +4184,28 @@
       "39": 386,
       "40": 400
     },
-    "Name": "Bishop"
+    "Name": "Bishop",
+    "Slot 1": [
+      "Mace",
+      "Spear",
+      "Wand"
+    ],
+    "Slot 2": [
+      "Clothes"
+    ],
+    "Slot 3": [
+      "Magician Hat"
+    ],
+    "Slot 4": [
+      "Light Footwear"
+    ],
+    "Slot 5": [
+      "Spell"
+    ],
+    "Slot 6": [
+      "Shield",
+      "Ring"
+    ]
   },
   {
     "ATK": {
@@ -3654,6 +4250,7 @@
       "39": 625,
       "40": 650
     },
+    "Class Type": "Blue",
     "DEF": {
       "1": 12,
       "2": 15,
@@ -3738,7 +4335,27 @@
       "39": 212,
       "40": 220
     },
-    "Name": "Druid"
+    "Name": "Druid",
+    "Slot 1": [
+      "Staff",
+      "Bow",
+      "Wand"
+    ],
+    "Slot 2": [
+      "Clothes"
+    ],
+    "Slot 3": [
+      "Herbal Medicine"
+    ],
+    "Slot 4": [
+      "Herbal Medicine"
+    ],
+    "Slot 5": [
+      "Amulet"
+    ],
+    "Slot 6": [
+      "Spell"
+    ]
   },
   {
     "ATK": {
@@ -3783,6 +4400,7 @@
       "39": 892,
       "40": 925
     },
+    "Class Type": "Blue",
     "DEF": {
       "1": 35,
       "2": 39,
@@ -3867,7 +4485,28 @@
       "39": 338,
       "40": 350
     },
-    "Name": "Arch Druid"
+    "Name": "Arch Druid",
+    "Slot 1": [
+      "Staff",
+      "Bow",
+      "Wand"
+    ],
+    "Slot 2": [
+      "Clothes"
+    ],
+    "Slot 3": [
+      "Herbal Medicine"
+    ],
+    "Slot 4": [
+      "Herbal Medicine"
+    ],
+    "Slot 5": [
+      "Amulet",
+      "Ring"
+    ],
+    "Slot 6": [
+      "Spell"
+    ]
   },
   {
     "ATK": {
@@ -3912,6 +4551,7 @@
       "39": 673,
       "40": 700
     },
+    "Class Type": "Blue",
     "DEF": {
       "1": 12,
       "2": 15,
@@ -3996,7 +4636,27 @@
       "39": 222,
       "40": 230
     },
-    "Name": "Sorcerer"
+    "Name": "Sorcerer",
+    "Slot 1": [
+      "Staff",
+      "Dagger",
+      "Wand"
+    ],
+    "Slot 2": [
+      "Clothes"
+    ],
+    "Slot 3": [
+      "Gloves"
+    ],
+    "Slot 4": [
+      "Light Footwear"
+    ],
+    "Slot 5": [
+      "Spell"
+    ],
+    "Slot 6": [
+      "Spell"
+    ]
   },
   {
     "ATK": {
@@ -4041,6 +4701,7 @@
       "39": 1156,
       "40": 1200
     },
+    "Class Type": "Blue",
     "DEF": {
       "1": 35,
       "2": 39,
@@ -4125,7 +4786,27 @@
       "39": 251,
       "40": 260
     },
-    "Name": "Warlock"
+    "Name": "Warlock",
+    "Slot 1": [
+      "Staff",
+      "Dagger",
+      "Wand"
+    ],
+    "Slot 2": [
+      "Clothes"
+    ],
+    "Slot 3": [
+      "Gloves"
+    ],
+    "Slot 4": [
+      "Light Footwear"
+    ],
+    "Slot 5": [
+      "Spell"
+    ],
+    "Slot 6": [
+      "Spell"
+    ]
   },
   {
     "ATK": {
@@ -4170,6 +4851,7 @@
       "39": 769,
       "40": 800
     },
+    "Class Type": "Blue",
     "DEF": {
       "1": 15,
       "2": 19,
@@ -4254,7 +4936,40 @@
       "39": 231,
       "40": 240
     },
-    "Name": "Spellblade"
+    "Name": "Spellblade",
+    "Slot 1": [
+      "Sword",
+      "Axe",
+      "Staff",
+      "Bow"
+    ],
+    "Slot 2": [
+      "Heavy Armor",
+      "Light Armor",
+      "Clothes"
+    ],
+    "Slot 3": [
+      "Magician Hat",
+      "Helmet",
+      "Gauntlets",
+      "Gloves"
+    ],
+    "Slot 4": [
+      "Heavy Footwear",
+      "Light Footwear"
+    ],
+    "Slot 5": [
+      "Amulet",
+      "Ring",
+      "Potion",
+      "Spell"
+    ],
+    "Slot 6": [
+      "Amulet",
+      "Ring",
+      "Herbal Medicine",
+      "Shield"
+    ]
   },
   {
     "ATK": {
@@ -4299,6 +5014,7 @@
       "39": 869,
       "40": 900
     },
+    "Class Type": "Blue",
     "DEF": {
       "1": 45,
       "2": 50,
@@ -4383,7 +5099,40 @@
       "39": 299,
       "40": 310
     },
-    "Name": "Spellknight"
+    "Name": "Spellknight",
+    "Slot 1": [
+      "Sword",
+      "Axe",
+      "Staff",
+      "Bow"
+    ],
+    "Slot 2": [
+      "Heavy Armor",
+      "Light Armor",
+      "Clothes"
+    ],
+    "Slot 3": [
+      "Magician Hat",
+      "Helmet",
+      "Gauntlets",
+      "Gloves"
+    ],
+    "Slot 4": [
+      "Heavy Footwear",
+      "Light Footwear"
+    ],
+    "Slot 5": [
+      "Amulet",
+      "Ring",
+      "Potion",
+      "Spell"
+    ],
+    "Slot 6": [
+      "Amulet",
+      "Ring",
+      "Herbal Medicine",
+      "Shield"
+    ]
   },
   {
     "ATK": {
@@ -4428,6 +5177,7 @@
       "39": 962,
       "40": 1000
     },
+    "Class Type": "Blue",
     "DEF": {
       "1": 20,
       "2": 24,
@@ -4512,7 +5262,28 @@
       "39": 250,
       "40": 260
     },
-    "Name": "Geomancer"
+    "Name": "Geomancer",
+    "Slot 1": [
+      "Staff",
+      "Mace",
+      "Wand"
+    ],
+    "Slot 2": [
+      "Clothes"
+    ],
+    "Slot 3": [
+      "Magician Hat"
+    ],
+    "Slot 4": [
+      "Gloves"
+    ],
+    "Slot 5": [
+      "Spell"
+    ],
+    "Slot 6": [
+      "Herbal Medicine",
+      "Shield"
+    ]
   },
   {
     "ATK": {
@@ -4641,6 +5412,27 @@
       "39": 290,
       "40": 300
     },
-    "Name": "Astramancer"
+    "Name": "Astramancer",
+    "Slot 1": [
+      "Staff",
+      "Mace",
+      "Wand"
+    ],
+    "Slot 2": [
+      "Clothes"
+    ],
+    "Slot 3": [
+      "Magician Hat"
+    ],
+    "Slot 4": [
+      "Gloves"
+    ],
+    "Slot 5": [
+      "Spell"
+    ],
+    "Slot 6": [
+      "Herbal Medicine",
+      "Shield"
+    ]
   }
 ]

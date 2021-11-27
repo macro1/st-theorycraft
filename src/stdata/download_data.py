@@ -1,6 +1,8 @@
+import collections
+import itertools
 import json
 
-from . import st_central_hero_quest_sim
+from . import official_spreadsheet, st_central_hero_quest_sim
 
 
 def dump_json(data, outfile):
@@ -8,9 +10,16 @@ def dump_json(data, outfile):
 
 
 def download_classes(output_path):
-    st_central_classes = st_central_hero_quest_sim.capture_classes()
+
+    all_classes = collections.defaultdict(dict)
+    for class_data in itertools.chain(
+        st_central_hero_quest_sim.capture_classes(),
+        official_spreadsheet.capture_classes(),
+    ):
+        all_classes[class_data["Name"]].update(class_data)
+
     with open(output_path, "w") as outfile:
-        dump_json(st_central_classes, outfile)
+        dump_json(list(all_classes.values()), outfile)
 
 
 def download_skills(output_path):
