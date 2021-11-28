@@ -80,13 +80,11 @@ def run(
     )
 
     try:
-        [weapon_bp] = [b for b in blueprints if b.type in ["wand"]]
+        [weapon_bp] = [b for b in blueprints if b.type in ["Wand", 'Sword', 'Bow']]
     except ValueError:
         estimated_weapon_importance = 0.0
     else:
-        estimated_weapon_importance = weapon_bp.base_atk / sum(
-            b.base_atk for b in blueprints
-        )
+        estimated_weapon_importance = (weapon_bp.base_atk * 1.25) * 1.7 / hero.stat_atk
 
     skill_options = load_data.get_skills(hero_class=hero_class)
     if override_skills:
@@ -114,6 +112,9 @@ def run(
         crit_chance = (
             hero.stat_crit_chance + sum(s.get_crit_chance() for s in skills)
         ) / 100.0
+        if hero.hero_class.name == 'Samurai':
+            crit_chance = 1.
+            crit_amt += 2.
         if hero.hero_class.name == "Dancer":
             crit_chance = (
                 crit_chance * (hero.stat_eva + sum(s.get_eva() for s in skills)) / 100.0
