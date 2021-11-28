@@ -8,7 +8,7 @@ from . import official_spreadsheet, st_central_hero_quest_sim
 
 
 def dump_json(
-    data: Union[Iterable[Dict[str, Any]], Dict[str, Any]], outfile: TextIO
+    data: Union[Iterable[Dict[str, Any]], Dict[Union[int, str], Any]], outfile: TextIO
 ) -> None:
     json.dump(data, outfile, indent=2, sort_keys=True)
 
@@ -41,4 +41,4 @@ def download_items(output_path: Path) -> None:
 def download_hero_levels(output_path: Path) -> None:
     official_hero_levels = official_spreadsheet.capture_hero_levels()
     with open(output_path, "w") as outfile:
-        dump_json({str(k): v for k, v in official_hero_levels.items()}, outfile)
+        dump_json(official_hero_levels, outfile)
