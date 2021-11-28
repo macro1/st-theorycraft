@@ -2222,6 +2222,17 @@
     "Type": "Crossbow"
   },
   {
+    "ATK": 680.0,
+    "Crit Chance": 0.0,
+    "DEF": 0.0,
+    "EVA": 0.0,
+    "HP": 21.0,
+    "Name": "Titan Crossbow - T11",
+    "Primary Stat": "Attack",
+    "Tier": 11.0,
+    "Type": "Crossbow"
+  },
+  {
     "ATK": 0.0,
     "Crit Chance": 0.0,
     "DEF": 8.0,
@@ -3333,6 +3344,17 @@
     "Type": "Rogue Hat"
   },
   {
+    "ATK": 44.0,
+    "Crit Chance": 0.0,
+    "DEF": 175.0,
+    "EVA": 0.0,
+    "HP": 0.0,
+    "Name": "Blue Spirit Mask - T8",
+    "Primary Stat": "Defense",
+    "Tier": 8.0,
+    "Type": "Rogue Hat"
+  },
+  {
     "ATK": 0.0,
     "Crit Chance": 0.0,
     "DEF": 205.0,
@@ -4197,6 +4219,17 @@
     "EVA": 0.0,
     "HP": 0.0,
     "Name": "Samurai Haidate - T7",
+    "Primary Stat": "Defense",
+    "Tier": 7.0,
+    "Type": "Heavy Footwear"
+  },
+  {
+    "ATK": 0.0,
+    "Crit Chance": 0.0,
+    "DEF": 160.0,
+    "EVA": 0.0,
+    "HP": 10.0,
+    "Name": "Topaz Greaves - T7",
     "Primary Stat": "Defense",
     "Tier": 7.0,
     "Type": "Heavy Footwear"
