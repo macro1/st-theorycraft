@@ -1,20 +1,17 @@
 import json
-from typing import Dict, Iterator, List, Optional, Tuple, Union
+from typing import Any, Dict, Iterable, Iterator, List, Optional, Tuple
 
 import requests
-
-CellValue = Union[None, float, str]
 
 
 def query_sheet(
     document_id: str,
     sheet_name: str,
     tq: str = "SELECT *",
-    as_dicts: bool = True,
     cell_range: Optional[str] = None,
-) -> Union[Iterator[Dict[str, CellValue]], Iterator[Tuple[CellValue, ...]]]:
+) -> Tuple[List[str], Iterable[Iterable[Any]]]:
 
-    headers: Dict[str, str] = {"X-DataSource-Auth": ""}
+    headers = {"X-DataSource-Auth": ""}
     params = {"tqx": "out:json", "tq": tq, "sheet": sheet_name}
     if cell_range is not None:
         params["range"] = cell_range
@@ -25,25 +22,31 @@ def query_sheet(
     )
 
     sheet_data = json.loads(data_resp.text.split("\n", maxsplit=1)[1])
-    cols: List[str] = [c["label"] for c in sheet_data["table"]["cols"]]
-    sheet_rows: List[Optional[Dict[str, Union[float, str]]]] = sheet_data["table"][
-        "rows"
-    ]
+    cols = [c["label"] for c in sheet_data["table"]["cols"]]
+    sheet_rows = sheet_data["table"]["rows"]
 
+    return cols, ((v["v"] if v else None for v in record["c"]) for record in sheet_rows)
+
+
+def query_sheet_tuples(*args: Any, **kwargs: Any) -> Iterator[Tuple[Any, ...]]:
+
+    _, sheet_rows = query_sheet(*args, **kwargs)
+
+    return (tuple(r) for r in sheet_rows)
+
+
+def query_sheet_dicts(*args: Any, **kwargs: Any) -> Iterator[Dict[str, Any]]:
+
+    cols, sheet_rows = query_sheet(*args, **kwargs)
     for record in sheet_rows:
-        values: Iterator[CellValue] = (v["v"] if v else None for v in record["c"])  # type: ignore
-        if as_dicts:
-            r_dict: Dict[str, CellValue] = dict(
-                zip(
-                    cols,
-                    values,
-                )
+        r_dict = dict(
+            zip(
+                cols,
+                record,
             )
-            try:
-                del r_dict[""]
-            except KeyError:
-                pass
-            yield r_dict
-        else:
-            r_tuple: Tuple[CellValue, ...] = tuple(values)
-            yield r_tuple
+        )
+        try:
+            del r_dict[""]
+        except KeyError:
+            pass
+        yield r_dict

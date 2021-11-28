@@ -1,4 +1,4 @@
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, Iterable, List, Tuple
 
 import requests
 
@@ -10,25 +10,31 @@ CLASS_SHEET_COLUMN_WIDTH = 8
 CLASS_TYPES = ["Red", "Green", "Blue"]
 
 
-def get_official_document_id():
+class InvalidDocumentURL(Exception):
+    ...
+
+
+def get_official_document_id() -> str:
     redirect_resp = requests.get(DOCUMENT_URL, allow_redirects=False)
+    if redirect_resp.next is None or redirect_resp.next.url is None:
+        raise InvalidDocumentURL("Unable to resolve redirect")
     return redirect_resp.next.url.split("/")[-1]
 
 
 def capture_single_class(
     class_type: str, raw_data: List[Tuple[str, ...]]
-) -> Dict[str, google_sheets.CellValue]:
+) -> Dict[str, Any]:
     name_value = raw_data[0][1]
     name_value = name_value.split("\n")[0].title()
     return {"Name": name_value, "Class Type": class_type}
 
 
-def capture_classes():
+def capture_classes() -> Iterable[Dict[str, Any]]:
 
-    hero_classes = []
-    raw_class_row_data: Optional[List[Tuple[google_sheets.CellValue]]] = None
-    for record in google_sheets.query_sheet(
-        get_official_document_id(), SHEET_HERO_CLASSSES, as_dicts=False
+    hero_classes: List[Dict[str, Any]] = []
+    raw_class_row_data: List[List[Any]] = []
+    for record in google_sheets.query_sheet_tuples(
+        get_official_document_id(), SHEET_HERO_CLASSSES
     ):
         if record[5] == "HP":
             if raw_class_row_data:

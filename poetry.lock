@@ -66,7 +66,7 @@ uvloop = ["uvloop (>=0.15.2)"]
 
 [[package]]
 name = "cachecontrol"
-version = "0.12.8"
+version = "0.12.10"
 description = "httplib2 caching for requests"
 category = "dev"
 optional = false
@@ -236,6 +236,14 @@ importlib-metadata = {version = "<4.3", markers = "python_version < \"3.8\""}
 mccabe = ">=0.6.0,<0.7.0"
 pycodestyle = ">=2.8.0,<2.9.0"
 pyflakes = ">=2.4.0,<2.5.0"
+
+[[package]]
+name = "glpk"
+version = "0.4.6"
+description = "PyGLPK, a Python module encapsulating GLPK."
+category = "main"
+optional = false
+python-versions = "*"
 
 [[package]]
 name = "html5lib"
@@ -792,7 +800,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6.2"
-content-hash = "03d0beae4bf35f4d969a300acd1368cf36bd8b50a0e9def6e0c60b049805eed2"
+content-hash = "7921c80a038b36e2f5e33501320a30fe0a07e0226f400714e06b991f36560d13"
 
 [metadata.files]
 atomicwrites = [
@@ -812,8 +820,8 @@ black = [
     {file = "black-21.9b0.tar.gz", hash = "sha256:7de4cfc7eb6b710de325712d40125689101d21d25283eed7e9998722cf10eb91"},
 ]
 cachecontrol = [
-    {file = "CacheControl-0.12.8-py2.py3-none-any.whl", hash = "sha256:a02648eef39d764f0ac566c7a50f8549e7011649b9d17024b94233cafa235bd1"},
-    {file = "CacheControl-0.12.8.tar.gz", hash = "sha256:254043c1bab748c89c09a890f9128a0fb2c654e946bcf473c12d29fdf9cb6c5b"},
+    {file = "CacheControl-0.12.10-py2.py3-none-any.whl", hash = "sha256:b0d43d8f71948ef5ebdee5fe236b86c6ffc7799370453dccb0e894c20dfa487c"},
+    {file = "CacheControl-0.12.10.tar.gz", hash = "sha256:d8aca75b82eec92d84b5d6eb8c8f66ea16f09d2adb09dbca27fe2d5fc8d3732d"},
 ]
 cachy = [
     {file = "cachy-0.3.0-py2.py3-none-any.whl", hash = "sha256:338ca09c8860e76b275aff52374330efedc4d5a5e45dc1c5b539c1ead0786fe7"},
@@ -936,6 +944,9 @@ filelock = [
 flake8 = [
     {file = "flake8-4.0.1-py2.py3-none-any.whl", hash = "sha256:479b1304f72536a55948cb40a32dce8bb0ffe3501e26eaf292c7e60eb5e0428d"},
     {file = "flake8-4.0.1.tar.gz", hash = "sha256:806e034dda44114815e23c16ef92f95c91e4c71100ff52813adf7132a6ad870d"},
+]
+glpk = [
+    {file = "glpk-0.4.6.tar.gz", hash = "sha256:8739fcf6513c2f225ac525c2a43c89f10de27b546983e7900235ea87c85a1b74"},
 ]
 html5lib = [
     {file = "html5lib-1.1-py2.py3-none-any.whl", hash = "sha256:0d78f8fde1c230e99fe37986a60526d7049ed4bf8a9fadbad5f00e22e58e041d"},

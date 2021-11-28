@@ -1,5 +1,5 @@
 import collections
-from typing import Dict, List
+from typing import Any, Dict, List, Tuple
 
 import requests
 
@@ -24,11 +24,11 @@ def get_heroquest_documet_id() -> str:
 def capture_classes() -> List[Dict[str, str]]:
     stat_types = ["HP", "ATK", "DEF"]
 
-    hero_classes: Dict[str, Dict[str, str]] = collections.defaultdict(dict)
+    hero_classes: Dict[str, Dict[str, Any]] = collections.defaultdict(dict)
+    current_header: Tuple[Any, ...]
 
-    current_header = None
-    for r in google_sheets.query_sheet(
-        get_heroquest_documet_id(), SHEET_HERO_STATS, as_dicts=False
+    for r in google_sheets.query_sheet_tuples(
+        get_heroquest_documet_id(), SHEET_HERO_STATS
     ):
         if r[0] in stat_types:
             current_header = r
@@ -40,11 +40,10 @@ def capture_classes() -> List[Dict[str, str]]:
         }
 
     header = None
-    for r in google_sheets.query_sheet(
+    for r in google_sheets.query_sheet_tuples(
         get_heroquest_documet_id(),
         SHEET_AUX_STUFF1,
         cell_range="A11:Y50",
-        as_dicts=False,
     ):
         if header is None:
             header = list(r)
@@ -62,9 +61,11 @@ def capture_classes() -> List[Dict[str, str]]:
     return list(hero_classes.values())
 
 
-def capture_skills():
-    return list(google_sheets.query_sheet(get_heroquest_documet_id(), SHEET_SKILL_DATA))
+def capture_skills() -> List[Dict[str, Any]]:
+    return list(
+        google_sheets.query_sheet_dicts(get_heroquest_documet_id(), SHEET_SKILL_DATA)
+    )
 
 
-def capture_items():
-    return list(google_sheets.query_sheet(EQ_QUEST_DOCUMENT_ID, SHEET_EQ_DATA))
+def capture_items() -> List[Dict[str, Any]]:
+    return list(google_sheets.query_sheet_dicts(EQ_QUEST_DOCUMENT_ID, SHEET_EQ_DATA))
