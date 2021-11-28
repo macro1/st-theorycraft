@@ -112,6 +112,9 @@ class Skill(pydantic.BaseModel):
             return ["Wand"]
         if values["name"] == "Marksman":
             return ["Bow", "Crossbow", "Gun"]
+        if values["name"] == "Warlord":
+            print(values)
+            return ["Sword", "Axe", "Dagger", "Mace", "Spear"]
         return v
 
     def get_hp(self) -> int:
@@ -124,6 +127,8 @@ class Skill(pydantic.BaseModel):
         return self.tier_3_atk or self.tier_2_atk
 
     def get_weapon_atk(self) -> int:
+        if self.name == "Warlord" or self.name == "Marksman":
+            return 200
         return self.tier_3_weapon_atk or self.tier_2_weapon_atk
 
     def get_crit_chance(self) -> int:
