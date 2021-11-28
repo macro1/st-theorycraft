@@ -1,0 +1,202 @@
+{
+  "1": {
+    "Hero Level": 1.0,
+    "Max Item Tier": 1.0,
+    "XP Needed": null
+  },
+  "2": {
+    "Hero Level": 2.0,
+    "Max Item Tier": 1.0,
+    "XP Needed": 30.0
+  },
+  "3": {
+    "Hero Level": 3.0,
+    "Max Item Tier": 2.0,
+    "XP Needed": 150.0
+  },
+  "4": {
+    "Hero Level": 4.0,
+    "Max Item Tier": 2.0,
+    "XP Needed": 400.0
+  },
+  "5": {
+    "Hero Level": 5.0,
+    "Max Item Tier": 2.0,
+    "XP Needed": 1005.0
+  },
+  "6": {
+    "Hero Level": 6.0,
+    "Max Item Tier": 3.0,
+    "XP Needed": 1627.0
+  },
+  "7": {
+    "Hero Level": 7.0,
+    "Max Item Tier": 3.0,
+    "XP Needed": 2455.0
+  },
+  "8": {
+    "Hero Level": 8.0,
+    "Max Item Tier": 3.0,
+    "XP Needed": 3526.0
+  },
+  "9": {
+    "Hero Level": 9.0,
+    "Max Item Tier": 4.0,
+    "XP Needed": 4884.0
+  },
+  "10": {
+    "Hero Level": 10.0,
+    "Max Item Tier": 4.0,
+    "XP Needed": 6578.0
+  },
+  "11": {
+    "Hero Level": 11.0,
+    "Max Item Tier": 4.0,
+    "XP Needed": 8666.0
+  },
+  "12": {
+    "Hero Level": 12.0,
+    "Max Item Tier": 5.0,
+    "XP Needed": 11215.0
+  },
+  "13": {
+    "Hero Level": 13.0,
+    "Max Item Tier": 5.0,
+    "XP Needed": 14300.0
+  },
+  "14": {
+    "Hero Level": 14.0,
+    "Max Item Tier": 5.0,
+    "XP Needed": 18012.0
+  },
+  "15": {
+    "Hero Level": 15.0,
+    "Max Item Tier": 5.0,
+    "XP Needed": 22453.0
+  },
+  "16": {
+    "Hero Level": 16.0,
+    "Max Item Tier": 6.0,
+    "XP Needed": 27740.0
+  },
+  "17": {
+    "Hero Level": 17.0,
+    "Max Item Tier": 6.0,
+    "XP Needed": 34009.0
+  },
+  "18": {
+    "Hero Level": 18.0,
+    "Max Item Tier": 6.0,
+    "XP Needed": 41418.0
+  },
+  "19": {
+    "Hero Level": 19.0,
+    "Max Item Tier": 7.0,
+    "XP Needed": 50147.0
+  },
+  "20": {
+    "Hero Level": 20.0,
+    "Max Item Tier": 7.0,
+    "XP Needed": 60404.0
+  },
+  "21": {
+    "Hero Level": 21.0,
+    "Max Item Tier": 7.0,
+    "XP Needed": 72426.0
+  },
+  "22": {
+    "Hero Level": 22.0,
+    "Max Item Tier": 8.0,
+    "XP Needed": 86490.0
+  },
+  "23": {
+    "Hero Level": 23.0,
+    "Max Item Tier": 8.0,
+    "XP Needed": 102910.0
+  },
+  "24": {
+    "Hero Level": 24.0,
+    "Max Item Tier": 8.0,
+    "XP Needed": 122048.0
+  },
+  "25": {
+    "Hero Level": 25.0,
+    "Max Item Tier": 8.0,
+    "XP Needed": 144323.0
+  },
+  "26": {
+    "Hero Level": 26.0,
+    "Max Item Tier": 9.0,
+    "XP Needed": 170211.0
+  },
+  "27": {
+    "Hero Level": 27.0,
+    "Max Item Tier": 9.0,
+    "XP Needed": 200261.0
+  },
+  "28": {
+    "Hero Level": 28.0,
+    "Max Item Tier": 9.0,
+    "XP Needed": 235104.0
+  },
+  "29": {
+    "Hero Level": 29.0,
+    "Max Item Tier": 10.0,
+    "XP Needed": 275462.0
+  },
+  "30": {
+    "Hero Level": 30.0,
+    "Max Item Tier": 10.0,
+    "XP Needed": 322165.0
+  },
+  "31": {
+    "Hero Level": 31.0,
+    "Max Item Tier": 10.0,
+    "XP Needed": 376162.0
+  },
+  "32": {
+    "Hero Level": 32.0,
+    "Max Item Tier": 11.0,
+    "XP Needed": 438546.0
+  },
+  "33": {
+    "Hero Level": 33.0,
+    "Max Item Tier": 11.0,
+    "XP Needed": 510565.0
+  },
+  "34": {
+    "Hero Level": 34.0,
+    "Max Item Tier": 11.0,
+    "XP Needed": 593652.0
+  },
+  "35": {
+    "Hero Level": 35.0,
+    "Max Item Tier": 11.0,
+    "XP Needed": 689449.0
+  },
+  "36": {
+    "Hero Level": 36.0,
+    "Max Item Tier": 11.0,
+    "XP Needed": 799837.0
+  },
+  "37": {
+    "Hero Level": 37.0,
+    "Max Item Tier": 11.0,
+    "XP Needed": 926973.0
+  },
+  "38": {
+    "Hero Level": 38.0,
+    "Max Item Tier": 11.0,
+    "XP Needed": 1073325.0
+  },
+  "39": {
+    "Hero Level": 39.0,
+    "Max Item Tier": 11.0,
+    "XP Needed": 1241721.0
+  },
+  "40": {
+    "Hero Level": 40.0,
+    "Max Item Tier": 11.0,
+    "XP Needed": 1435402.0
+  }
+}

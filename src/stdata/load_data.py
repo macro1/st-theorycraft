@@ -2,7 +2,7 @@ import collections
 import itertools
 import json
 import pathlib
-from typing import Dict, List, Union
+from typing import Any, Dict, List, Optional, Union
 
 from . import data_models
 
@@ -26,6 +26,12 @@ def get_class(hero_class_name: str) -> data_models.HeroClass:
     return data_models.HeroClass(**hero_class)
 
 
+def get_hero_levels() -> Dict[int, Dict[str, Any]]:
+    with open(pathlib.Path("data") / "hero_levels.json") as infile:
+        hero_levels = json.load(infile)
+    return {int(k): v for k, v in hero_levels.items()}
+
+
 def compare_stats(
     stat_a: Union[int, float, None], stat_b: Union[int, float, None]
 ) -> bool:
@@ -37,10 +43,14 @@ def compare_stats(
 
 
 def get_blueprints(
-    remove_redundant: bool = False,
+    remove_redundant: bool = False, max_tier: Optional[int] = None
 ) -> Dict[str, List[data_models.Blueprint]]:
     with open(pathlib.Path("data") / "items.json") as infile:
         raw_items = json.load(infile)
+    if max_tier:
+        raw_items = [
+            i for i in raw_items if i[data_models.decode_attrib("tier")] <= max_tier
+        ]
     if remove_redundant:
         redundant_items = []
         for item_a, item_b in itertools.permutations(raw_items, 2):

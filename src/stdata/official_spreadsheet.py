@@ -6,6 +6,7 @@ from . import google_sheets
 
 DOCUMENT_URL = "http://bit.ly/shoptitans"
 SHEET_HERO_CLASSSES = "Heroes"
+SHEET_HERO_LEVELS = "Hero Levels"
 CLASS_SHEET_COLUMN_WIDTH = 8
 CLASS_TYPES = ["Red", "Green", "Blue"]
 
@@ -48,3 +49,12 @@ def capture_classes() -> Iterable[Dict[str, Any]]:
             raw_data.append(record[offset : offset + CLASS_SHEET_COLUMN_WIDTH])
 
     return hero_classes
+
+
+def capture_hero_levels() -> Dict[int, Dict[str, Any]]:
+    return {
+        int(r["Hero Level"]): r
+        for r in google_sheets.query_sheet_dicts(
+            get_official_document_id(), SHEET_HERO_LEVELS
+        )
+    }

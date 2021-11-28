@@ -59,6 +59,7 @@ class Blueprint(pydantic.BaseModel):
     crit_chance: int
     eva: int
     type: str
+    tier: int
 
     class Config:
         alias_generator = decode_attrib

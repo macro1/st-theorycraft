@@ -10,7 +10,9 @@ from . import quest_models
 def run(hero_class_name: str, hero_level: int, gear_quality: str) -> quest_models.Hero:
     hero_class = load_data.get_class(hero_class_name)
 
-    all_items = load_data.get_blueprints(remove_redundant=True)
+    max_tier = load_data.get_hero_levels()[hero_level]["Max Item Tier"]
+
+    all_items = load_data.get_blueprints(remove_redundant=True, max_tier=max_tier)
 
     blueprint_combo = []
     for combination in hero_class.item_type_combinations():
