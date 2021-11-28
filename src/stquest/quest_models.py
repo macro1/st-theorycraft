@@ -17,7 +17,7 @@ class EnchSoul(enum.Enum):
 
 
 class Quality(enum.Enum):
-    COMMON = "common"
+    NORMAL = "normal"
     SUPERIOR = "superior"
     FLAWLESS = "flawless"
     EPIC = "epic"
@@ -25,8 +25,8 @@ class Quality(enum.Enum):
 
 
 QUALITY_MULTIPLIER = {
-    Quality.COMMON: 1.0,
-    Quality.SUPERIOR: 1.27,
+    Quality.NORMAL: 1.0,
+    Quality.SUPERIOR: 1.25,
     Quality.FLAWLESS: 2.0,
     Quality.EPIC: 3.0,
     Quality.LEGENDARY: 5.0,
