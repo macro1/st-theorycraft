@@ -2,14 +2,12 @@ import collections
 import itertools
 import json
 from pathlib import Path
-from typing import Any, Dict, Iterable, TextIO, Union
+from typing import Any, Dict, TextIO
 
 from . import official_spreadsheet, st_central_hero_quest_sim
 
 
-def dump_json(
-    data: Union[Iterable[Dict[str, Any]], Dict[Union[int, str], Any]], outfile: TextIO
-) -> None:
+def dump_json(data: Any, outfile: TextIO) -> None:
     json.dump(data, outfile, indent=2, sort_keys=True)
 
 
