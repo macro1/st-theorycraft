@@ -36,17 +36,38 @@ QUALITY_MULTIPLIER = {
 class Item(pydantic.BaseModel):
     blueprint: data_models.Blueprint
     quality: Quality
-    ench_elem: str
+    ench_elem: Optional[int]
     ench_soul: Optional[EnchSoul]
 
     def get_hp(self) -> int:
-        return int(self.blueprint.base_hp * QUALITY_MULTIPLIER[self.quality])
+        if not self.blueprint.base_hp:
+            return 0
+        element_hp = {None: 0, 9: 10}[self.ench_elem]
+        soul_hp = {None: 0, EnchSoul.MUNDRA: 10}.get(self.ench_soul, 10)
+        return int(
+            (self.blueprint.base_hp + element_hp + soul_hp)
+            * QUALITY_MULTIPLIER[self.quality]
+        )
 
     def get_atk(self) -> int:
-        return int(self.blueprint.base_atk * QUALITY_MULTIPLIER[self.quality])
+        if not self.blueprint.base_atk:
+            return 0
+        element_atk = {None: 0, 9: 10}[self.ench_elem]
+        soul_atk = {None: 0, EnchSoul.MUNDRA: 50}.get(self.ench_soul, 48)
+        return int(
+            (self.blueprint.base_atk + element_atk + soul_atk)
+            * QUALITY_MULTIPLIER[self.quality]
+        )
 
     def get_def(self) -> int:
-        return int(self.blueprint.base_def * QUALITY_MULTIPLIER[self.quality])
+        if not self.blueprint.base_def:
+            return 0
+        element_def = {None: 0, 9: 10}[self.ench_elem]
+        soul_def = {None: 0, EnchSoul.MUNDRA: 33}.get(self.ench_soul, 10)
+        return int(
+            (self.blueprint.base_def + element_def + soul_def)
+            * QUALITY_MULTIPLIER[self.quality]
+        )
 
 
 class Hero(pydantic.BaseModel):
@@ -54,21 +75,32 @@ class Hero(pydantic.BaseModel):
     items: List[Item]
     skill_names: List[str]
     level: int = 40
+    seed_hp: int = 0
+    seed_atk: int = 0
+    seed_def: int = 0
 
     @property
     def stat_hp(self) -> int:
-        return self.hero_class.base_hp[self.level] + sum(i.get_hp() for i in self.items)
+        return (
+            self.hero_class.base_hp[self.level]
+            + self.seed_hp
+            + sum(i.get_hp() for i in self.items)
+        )
 
     @property
     def stat_atk(self) -> int:
-        return self.hero_class.base_atk[self.level] + sum(
-            i.get_atk() for i in self.items
+        return (
+            self.hero_class.base_atk[self.level]
+            + self.seed_atk
+            + sum(i.get_atk() for i in self.items)
         )
 
     @property
     def stat_def(self) -> int:
-        return self.hero_class.base_def[self.level] + sum(
-            i.get_def() for i in self.items
+        return (
+            self.hero_class.base_def[self.level]
+            + self.seed_def
+            + sum(i.get_def() for i in self.items)
         )
 
     @property

@@ -7,7 +7,9 @@ from stdata import load_data
 from . import quest_models
 
 
-def run(hero_class_name: str, hero_level: int, gear_quality: str) -> quest_models.Hero:
+def run(
+    hero_class_name: str, hero_level: int, gear_quality: str, seeds: bool = True
+) -> quest_models.Hero:
     hero_class = load_data.get_class(hero_class_name)
 
     max_tier = load_data.get_hero_levels()[hero_level]["Max Item Tier"]
@@ -34,10 +36,16 @@ def run(hero_class_name: str, hero_level: int, gear_quality: str) -> quest_model
     lp.rows[0].bounds = 1, 1
 
     for idx, bps in enumerate(blueprint_combo):
+        items = [
+            quest_models.Item(
+                blueprint=b, quality=gear_quality, ench_elem=9, ench_soul="lion"
+            )
+            for b in bps
+        ]
         lp.obj[idx] = (
-            sum(b.base_atk for b in bps)
-            + sum(b.base_def for b in bps)
-            + (10 * sum(b.base_hp for b in bps))
+            sum(i.get_atk() for i in items)
+            + sum(i.get_def() for i in items)
+            + (10 * sum(i.get_hp() for i in items))
         )
 
     lp.obj.maximize = True
@@ -56,10 +64,13 @@ def run(hero_class_name: str, hero_level: int, gear_quality: str) -> quest_model
         hero_class=hero_class,
         items=[
             quest_models.Item(
-                blueprint=bp, quality=gear_quality, ench_elem="T9", ench_soul="lion"
+                blueprint=bp, quality=gear_quality, ench_elem=9, ench_soul="lion"
             )
             for bp in blueprints
         ],
         skill_names=[],
         level=hero_level,
+        seed_hp=40 if seeds else 0,
+        seed_atk=40 if seeds else 0,
+        seed_def=40 if seeds else 0,
     )
