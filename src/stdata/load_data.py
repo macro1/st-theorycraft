@@ -33,8 +33,16 @@ def get_hero_levels() -> Dict[int, Dict[str, Any]]:
 
 
 def compare_stats(
-    stat_a: Union[int, float, None], stat_b: Union[int, float, None]
+    stat_a: Union[int, float, str, None], stat_b: Union[int, float, str, None]
 ) -> bool:
+    try:
+        stat_a = float(stat_a)
+    except TypeError:
+        pass
+    try:
+        stat_b = float(stat_b)
+    except TypeError:
+        pass
     if not stat_a:
         return True
     if stat_b is None:
@@ -59,17 +67,23 @@ def get_blueprints(
                 != item_b[data_models.decode_attrib("type")]
             ):
                 continue
-            if all(
-                compare_stats(
-                    item_a[data_models.decode_attrib(stat)],
-                    item_b[data_models.decode_attrib(stat)],
+            if (
+                all(
+                    compare_stats(
+                        item_a[data_models.decode_attrib(stat)],
+                        item_b[data_models.decode_attrib(stat)],
+                    )
+                    for stat in stats
                 )
-                for stat in stats
+                and (item_a.get("Element Affinity") or "---")
+                == (item_b.get("Element Affinity") or "---")
             ):
                 redundant_items.append(item_a)
-        items = [
-            data_models.Blueprint(**i) for i in raw_items if i not in redundant_items
-        ]
+        items = []
+        for i in raw_items:
+            if i in redundant_items:
+                continue
+            items.append(data_models.Blueprint(**i))
     items_by_type = collections.defaultdict(list)
     for item in items:
         items_by_type[item.type].append(item)

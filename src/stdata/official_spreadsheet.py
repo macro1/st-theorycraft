@@ -7,6 +7,7 @@ from . import google_sheets
 DOCUMENT_URL = "http://bit.ly/shoptitans"
 SHEET_HERO_CLASSSES = "Heroes"
 SHEET_HERO_LEVELS = "Hero Levels"
+SHEET_BLUEPRINTS = "Blueprints"
 CLASS_SHEET_COLUMN_WIDTH = 8
 CLASS_TYPES = ["Red", "Green", "Blue"]
 
@@ -58,3 +59,24 @@ def capture_hero_levels() -> Dict[int, Dict[str, Any]]:
             get_official_document_id(), SHEET_HERO_LEVELS
         )
     }
+
+
+def capture_items() -> List[Dict[str, Any]]:
+    items = list(
+        google_sheets.query_sheet_dicts(get_official_document_id(), SHEET_BLUEPRINTS)
+    )
+    for item in items:
+        item["Name"] = f"{item['Name']} - T{int(item['Tier'])}"
+        for k in item.keys():
+            if item[k] == "---" or item[k] is None:
+                item[k] = 0.0
+            try:
+                is_percent = item[k][-1] == "%"
+            except TypeError:
+                pass
+            else:
+                if is_percent:
+                    item[k] = item[k][:-1]
+        item["Crit Chance"] = int(item.pop("CRIT"))
+        item["Element Affinity"] = item.pop("Elemental Affinity")
+    return items

@@ -80,7 +80,7 @@ def run(
     )
 
     try:
-        [weapon_bp] = [b for b in blueprints if b.type in ["Wand", 'Sword', 'Bow']]
+        [weapon_bp] = [b for b in blueprints if b.type in ["Wand", "Sword", "Bow"]]
     except ValueError:
         estimated_weapon_importance = 0.0
     else:
@@ -102,6 +102,7 @@ def run(
             s.get_atk()
             + s.get_weapon_atk() * estimated_weapon_importance
             + s.get_eq_bonus()
+            + (0.1 if s.rarity == "Epic" else 0.0)
             for s in skills
         )
         crit_amt = (
@@ -112,9 +113,9 @@ def run(
         crit_chance = (
             hero.stat_crit_chance + sum(s.get_crit_chance() for s in skills)
         ) / 100.0
-        if hero.hero_class.name == 'Samurai':
-            crit_chance = 1.
-            crit_amt += 2.
+        if hero.hero_class.name == "Samurai":
+            crit_chance = 1.0
+            crit_amt += 2.0
         if hero.hero_class.name == "Dancer":
             crit_chance = (
                 crit_chance * (hero.stat_eva + sum(s.get_eva() for s in skills)) / 100.0

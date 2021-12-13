@@ -448,7 +448,8 @@
       "Potion"
     ],
     "Slot 6": [
-      "Herbal Medicine"
+      "Herbal Medicine",
+      "Cape"
     ]
   },
   {
@@ -600,6 +601,7 @@
     ],
     "Slot 6": [
       "Herbal Medicine",
+      "Cape",
       "Shield"
     ]
   },
@@ -1050,7 +1052,8 @@
       "Potion"
     ],
     "Slot 6": [
-      "Ring"
+      "Ring",
+      "Cape"
     ]
   },
   {
@@ -1200,7 +1203,8 @@
       "Potion"
     ],
     "Slot 6": [
-      "Ring"
+      "Ring",
+      "Cape"
     ]
   },
   {
@@ -1647,7 +1651,8 @@
       "Heavy Footwear"
     ],
     "Slot 5": [
-      "Shield"
+      "Shield",
+      "Cape"
     ],
     "Slot 6": [
       "Herbal Medicine",
@@ -1798,7 +1803,8 @@
       "Heavy Footwear"
     ],
     "Slot 5": [
-      "Shield"
+      "Shield",
+      "Cape"
     ],
     "Slot 6": [
       "Herbal Medicine",
@@ -1949,7 +1955,8 @@
       "Gloves"
     ],
     "Slot 5": [
-      "Amulet"
+      "Amulet",
+      "Cape"
     ],
     "Slot 6": [
       "Ring"
@@ -2100,7 +2107,8 @@
       "Light Footwear"
     ],
     "Slot 5": [
-      "Amulet"
+      "Amulet",
+      "Cape"
     ],
     "Slot 6": [
       "Ring"
@@ -2242,7 +2250,8 @@
       "Amulet"
     ],
     "Slot 3": [
-      "Amulet"
+      "Amulet",
+      "Cape"
     ],
     "Slot 4": [
       "Amulet"
@@ -2390,7 +2399,8 @@
       "Amulet"
     ],
     "Slot 3": [
-      "Amulet"
+      "Amulet",
+      "Cape"
     ],
     "Slot 4": [
       "Amulet"
@@ -2847,7 +2857,8 @@
       "Light Footwear"
     ],
     "Slot 5": [
-      "Herbal Medicine"
+      "Herbal Medicine",
+      "Cape"
     ],
     "Slot 6": [
       "Amulet"
@@ -2997,7 +3008,8 @@
       "Light Footwear"
     ],
     "Slot 5": [
-      "Herbal Medicine"
+      "Herbal Medicine",
+      "Cape"
     ],
     "Slot 6": [
       "Amulet"
@@ -3753,7 +3765,8 @@
       "Spell"
     ],
     "Slot 6": [
-      "Ring"
+      "Ring",
+      "Cape"
     ]
   },
   {
@@ -3903,7 +3916,8 @@
       "Spell"
     ],
     "Slot 6": [
-      "Ring"
+      "Ring",
+      "Cape"
     ]
   },
   {
@@ -4053,7 +4067,8 @@
       "Spell"
     ],
     "Slot 6": [
-      "Shield"
+      "Shield",
+      "Cape"
     ]
   },
   {
@@ -4204,6 +4219,7 @@
     ],
     "Slot 6": [
       "Shield",
+      "Cape",
       "Ring"
     ]
   },

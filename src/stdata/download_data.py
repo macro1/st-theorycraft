@@ -32,8 +32,12 @@ def download_skills(output_path: Path) -> None:
 
 def download_items(output_path: Path) -> None:
     st_central_items = st_central_hero_quest_sim.capture_items()
+    official_items = official_spreadsheet.capture_items()
+    combined_items = collections.defaultdict(dict)
+    for item in itertools.chain(st_central_items, official_items):
+        combined_items[item["Name"]].update(item)
     with open(output_path, "w") as outfile:
-        dump_json(st_central_items, outfile)
+        dump_json(list(combined_items.values()), outfile)
 
 
 def download_hero_levels(output_path: Path) -> None:

@@ -195,6 +195,7 @@ class Blueprint(pydantic.BaseModel):
     eva: int
     type: str
     tier: int
+    element_affinity: str
 
     class Config:
         alias_generator = decode_attrib
